@@ -19,7 +19,7 @@
 			 <div class="left">
 				<div class="sectionTitle">Enter the Meal Details</div>
 				<form ng-submit="calculate()">
-					<div class="inputDiv">Base meal price: <input type="number" ng-model="baseMealPrice" ></div>
+					<div class="inputDiv">Base meal price: <input type="number" step="0.01" ng-model="baseMealPrice" ></div>
 					<div class="inputDiv">Tax Rate: %<input type="number" ng-model="taxRate"></div>	
 					<div class="inputDiv">Tip Percentage: %<input type="number" ng-model="tipPercentage"></div>
 					<button class="buttons">Submit</button>
