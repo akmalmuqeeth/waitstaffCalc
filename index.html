@@ -22,7 +22,7 @@
 					<div class="inputDiv">Base meal price: <input type="number" ng-model="baseMealPrice" ></div>
 					<div class="inputDiv">Tax Rate: %<input type="number" ng-model="taxRate"></div>	
 					<div class="inputDiv">Tip Percentage: %<input type="number" ng-model="tipPercentage"></div>
-					<button>Submit</button>
+					<button class="buttons">Submit</button>
 				</form>
 
 
@@ -39,6 +39,8 @@
 			 	<div class="inputDiv">Tip Total: {{tipTotal | currency}}</div>
 			 	<div class="inputDiv">Meal Count:{{mealCount}}</div>
 			 	<div class="inputDiv">Average Tip Per Meal: {{averageTip | currency}}</div>
+
+			 	<button class="buttons" ng-click="reset()">Reset</button>
 
 			 </div>
 	 		

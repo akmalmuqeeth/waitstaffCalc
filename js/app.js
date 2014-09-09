@@ -2,18 +2,6 @@ angular.module("calcApp", []).
 controller("calcController", function($scope){
 	$scope.title = "Waitstaff Calculator";
 
-	$scope.baseMealPrice = 0;
-	$scope.taxRate = 0;
-	$scope.tipPercentage = 0;
-
-	$scope.subtotal= 0.0;
-	$scope.tip = 0.0;
-	$scope.customerTotal = 0.0;
-
-	$scope.tipTotal = 0.0;
-	$scope.mealCount = 0;
-	$scope.averageTip = 0.0;
-
 	$scope.calculate = function(){
 		var taxValue = ($scope.taxRate / 100) * $scope.baseMealPrice;
 		$scope.subtotal = taxValue + $scope.baseMealPrice;
@@ -25,4 +13,20 @@ controller("calcController", function($scope){
 		$scope.averageTip = $scope.tipTotal / $scope.mealCount;
 
 	};
+
+	$scope.reset = function(){
+		$scope.baseMealPrice = 0;
+		$scope.taxRate = 0;
+		$scope.tipPercentage = 0;
+
+		$scope.subtotal= 0.0;
+		$scope.tip = 0.0;
+		$scope.customerTotal = 0.0;
+
+		$scope.tipTotal = 0.0;
+		$scope.mealCount = 0;
+		$scope.averageTip = 0.0;
+	};
+
+	$scope.reset();
 });

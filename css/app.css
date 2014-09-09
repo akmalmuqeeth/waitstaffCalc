@@ -49,3 +49,11 @@ input.ng-valid {
 font-size: 53px;
 margin-top: 20px;
 }
+
+.buttons{
+	width: 100px;
+	height: 27px;
+	float: right;
+	margin-right: 28px;
+	margin-top: 20px;
+}
