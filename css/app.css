@@ -43,10 +43,14 @@ input.ng-valid {
 .inputDiv{
 	margin: 10px;
 }
+span.invalid{
+	color: red;
+	margin: 10px;
+}
 
 .title{
-	margin-left: 502px;
-font-size: 53px;
+	font-size: 53px;
+text-align: center;
 margin-top: 20px;
 }
 
